@@ -178,6 +178,7 @@ export class Terminal extends Component {
     }
 
     processAICommand = (command) => {
+        if (!command || command.trim().length === 0) return null;
         return this.ai.processQuery(command);
     }
 
