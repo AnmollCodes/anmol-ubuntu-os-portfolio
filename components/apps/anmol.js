@@ -384,7 +384,7 @@ function Projects() {
                     <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 right-full"></div>
                 </div>
             </div>
-            {/* <iframe src="https://github.com/sponsors/AnmollCodes/card" title="Sponsor AnmollCodes" className='my-4 w-5/6 md:w-3/4' ></iframe> */}
+
 
             {
                 project_list.map((project, index) => {
