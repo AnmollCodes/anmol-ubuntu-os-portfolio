@@ -87,26 +87,6 @@ Every project is backed by measurable outcomes, not descriptions.
 
 ---
 
-## 🧠 Additional Engineering Differentiators
-
-### 🧩 System-First Storytelling
-Projects include:
-- Problem framing
-- Design decisions
-- Trade-offs
-- Outcomes
-
-*This mirrors real engineering design discussions.*
-
-### 🧪 Experiments & Iteration Space
-Dedicated sections for:
-- Prototypes
-- Partial builds
-- Failed attempts
-- Learnings
-
-*Signals growth mindset and engineering maturity.*
-
 ### 🧭 OS-Level Navigation Model
 The portfolio is structured as an operating environment, not pages:
 - **Apps**
