@@ -14,7 +14,7 @@ export class Gedit extends Component {
 
     componentDidMount() {
         // 👇 Client ID: Go to EmailJS dashboard and copy your "Public Key"
-        emailjs.init("YOUR_PUBLIC_KEY_HERE");
+        emailjs.init(process.env.NEXT_PUBLIC_USER_ID);
     }
 
     sendMessage = async () => {
@@ -44,8 +44,8 @@ export class Gedit extends Component {
         this.setState({ sending: true });
 
         // 👇 Service ID & Template ID from EmailJS
-        const serviceID = "YOUR_SERVICE_ID_HERE";
-        const templateID = "YOUR_TEMPLATE_ID_HERE";
+        const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID;
+        const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
         const templateParams = {
             'name': name,
             'subject': subject,
