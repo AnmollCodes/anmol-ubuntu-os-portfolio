@@ -8,10 +8,10 @@ export default function Meta() {
             <meta charSet="utf-8" />
             <meta name="title" content="Anmol Agarwal Portfolio - Computer Engineering Student" />
             <meta name="description"
-                content="Anmol Agarwal's (anmolagarwal) Personal Portfolio Website. Made with Ubuntu 20.4 (Linux) theme by Next.js and Tailwind CSS." />
-            <meta name="author" content="Anmol Agarwal (anmolagarwal)" />
+                content="Anmol Agarwal's Personal Portfolio. A Software Engineer showcasing work through an interactive Ubuntu 20.04 desktop simulation. Explore AI projects, skills, and experience." />
+            <meta name="author" content="Anmol Agarwal (AnmollCodes)" />
             <meta name="keywords"
-                content="anmolagarwal, anmolagarwal's portfolio, anmolagarwal linux, ubuntu portfolio, anmol agarwal protfolio,anmol agarwal computer, anmol agarwal, anmol ubuntu, anmol agarwal ubuntu portfolio" />
+                content="Anmol Agarwal, AnmollCodes, Software Engineer Portfolio, Ubuntu Portfolio, React Developer, AI Engineer, Full Stack Developer, Interactive Portfolio" />
             <meta name="robots" content="index, follow" />
             <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
             <meta name="language" content="English" />
