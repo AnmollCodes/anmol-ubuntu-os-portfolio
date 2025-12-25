@@ -8,7 +8,7 @@ const RecruiterMode = ({ toggleRecruiterMode }) => {
                 <div className="font-bold text-xl tracking-tight">Anmol Agarwal</div>
                 <button
                     onClick={toggleRecruiterMode}
-                    className="flex items-center gap-2 bg-gray-900 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition-all shadow-sm"
+                    className="flex items-center gap-2 bg-gray-900 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-800 hover:scale-105 transition-all shadow-sm"
                 >
                     <span>Exit Recruiter Mode</span>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
