@@ -1,14 +1,13 @@
-# Web simulation of UbuntuOS
+# Anmol Agarwal - UbuntuOS Portfolio
 
-This is a personal portfolio website of theme Ubuntu 20.04, made using Next.js & tailwind CSS.
-If you want to edit this. Clone this project and edit the files in `/src/components`.
+## 🚀 About
+This is **Anmol Agarwal's personal portfolio**, reimagined as a fully functional **Ubuntu 20.04** desktop environment. It highlights his journey as a Software Engineer through an interactive, OS-like interface.
 
-To run this on localhost
-type `npm start` and when u are done coding type `npm run build` to build your app.
-
-_NOTE: if you have yarn just replace `npm start` and `npm run build` with `yarn start` and `yarn build`._
-
-<a href="https://www.buymeacoffee.com/anmolagarwal" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 140px !important;" ></a>
+Built with **Next.js** and **Tailwind CSS**, it features:
+- **Interactive Terminal**: Chat with an AI-powered assistant about Anmol's skills.
+- **Recruiter Mode**: A streamlined view for quick profile scanning.
+- **Draggable Windows**: A real desktop experience.
+- **Custom Apps**: VS Code, Chrome, Spotify, and more.
 
 ### To make the contact form work
 
