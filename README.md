@@ -1,62 +1,217 @@
-# Anmol Agarwal - UbuntuOS Portfolio
+# 🐧 Ubuntu-Inspired AI Portfolio OS
 
-## 🚀 About
-This is **Anmol Agarwal's personal portfolio**, reimagined as a fully functional **Ubuntu 20.04** desktop environment. It highlights his journey as a Software Engineer through an interactive, OS-like interface.
+> **A technically evolved Ubuntu 20.04–inspired portfolio that functions as an interactive, AI-driven knowledge system rather than a static website.**
 
-Built with **Next.js** and **Tailwind CSS**, it features:
-- **Interactive Terminal**: Chat with an AI-powered assistant about Anmol's skills.
-- **Recruiter Mode**: A streamlined view for quick profile scanning.
-- **Draggable Windows**: A real desktop experience.
-- **Custom Apps**: VS Code, Chrome, Spotify, and more.
+This project transforms a traditional portfolio into a **portfolio operating system**, combining **frontend engineering, AI systems, and product design** to demonstrate how I design, reason, and ship software.
 
-### To make the contact form work
+It is built to answer recruiter and engineer questions **interactively**, not passively.
 
-- Create a account in [emailjs](https://www.emailjs.com/) create also new Outlook or Gmail account to be able
-  to send email.
-- Create a new service, select and log in to your newly created outlook or gmail account on EmailJS.
-- Go back to the dashboard and get the Service ID copy it.
-- Create a .env file in your root folder and put
+---
 
+## 📌 Core Design Philosophy
+
+Most portfolios show *what* someone built.  
+This portfolio focuses on **how and why**.
+
+Key principles:
+- **Systems over pages**
+- **Proof over claims**
+- **Interaction over static content**
+- **Intelligence over animation**
+
+---
+
+## 🚀 Key Technical Features
+
+### 1️⃣ AI-Powered Terminal (Ask-Me-Anything Interface)
+
+A fully interactive Ubuntu-style terminal that acts as a **personal knowledge agent**.
+
+**Capabilities**
+- Accepts natural language and command-style queries:
+  ```bash
+  who are you
+  show projects
+  why should we hire you
+  show achievements
+  ```
+- **Intent detection + response routing**
+- **Context-aware answers** grounded in real portfolio data
+- **No generic or hallucinated responses**
+
+**Technical Highlights**
+- Retrieval-Augmented Generation (RAG) pattern
+- Structured knowledge base (projects, achievements, skills)
+- Deterministic fallback handling for unknown queries
+- Terminal UX with typing animation, cursor blink, and command history
+
+*Why this matters: Demonstrates applied AI engineering, not just API usage.*
+
+### 2️⃣ Recruiter Mode (Signal-First Rendering)
+
+A global UI toggle optimized for recruiter workflows.
+
+**Behavior**
+- Disables non-essential animations
+- Switches layout to a high-signal view
+- Surfaces only:
+  - Top projects
+  - Impact metrics
+  - Skills snapshot
+  - Honors & recognitions
+  - Direct contact CTA
+
+**Technical Implementation**
+- State persisted via `localStorage`
+- Conditional layout rendering
+- Zero duplication of data sources
+
+*Why this matters: Shows empathy for real-world users and decision-making constraints.*
+
+### 3️⃣ Project Impact Metrics System
+
+Every project is backed by measurable outcomes, not descriptions.
+
+**Metrics Examples**
+- **Scale** (users, rank, scope)
+- **Technical depth** (models, systems, architecture)
+- **Outcomes** (accuracy, deployment, adoption)
+- **Recognition** (global/national selections, incubation)
+
+**Implementation**
+- Metrics defined via JSON/config
+- Rendered consistently across UI
+- Designed for 30-second recruiter scan
+
+*Why this matters: Converts projects into defensible interview talking points.*
+
+---
+
+## 🧠 Additional Engineering Differentiators
+
+### 🧩 System-First Storytelling
+Projects include:
+- Problem framing
+- Design decisions
+- Trade-offs
+- Outcomes
+
+*This mirrors real engineering design discussions.*
+
+### 🧪 Experiments & Iteration Space
+Dedicated sections for:
+- Prototypes
+- Partial builds
+- Failed attempts
+- Learnings
+
+*Signals growth mindset and engineering maturity.*
+
+### 🧭 OS-Level Navigation Model
+The portfolio is structured as an operating environment, not pages:
+- **Apps**
+- **Terminal**
+- **Settings**
+- **Files**
+- **Modes**
+
+All UI metaphors are intentional and functional.
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+| :--- | :--- |
+| **Framework** | Next.js |
+| **Styling** | Tailwind CSS |
+| **UI Architecture** | Component-driven |
+| **State Management** | Local + config-based |
+| **AI Layer** | RAG-style intent & retrieval |
+| **Config** | JSON-driven content |
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+ ├── components/          # UI components (apps, terminal, toggles)
+ ├── pages/               # Next.js routing
+ ├── styles/              # Global + Tailwind styles
+ ├── public/              # Static assets
+ ├── config/
+ │    ├── projects.json
+ │    ├── achievements.json
+ │    ├── skills.json
+ │    └── ai-knowledge.ts
 ```
 
-NEXT_PUBLIC_USER_ID = 'YOUR_USER_ID'
-NEXT_PUBLIC_TEMPLATE_ID = 'template_fqqqb9g'
-NEXT_PUBLIC_SERVICE_ID = 'YOUR_SERVICE_ID'
+---
 
+## ⚙️ Getting Started
+
+### Prerequisites
+- Node.js (v16+ recommended)
+- npm or yarn
+
+### Installation
+
+```bash
+git clone https://github.com/AnmollCodes/anmol-ubuntu-os-portfolio.git
+cd anmol-ubuntu-os-portfolio
+npm install
 ```
 
-into it. Replace \*your user id and your service ID with your values in your EmailJS service.
+### Development
 
-## Star History
+```bash
+npm run dev
+```
+Runs at `http://localhost:3000`
 
-[![Star History Chart](https://api.star-history.com/svg?repos=anmolagarwal/anmolagarwal.github.io&type=Date)](https://star-history.com/#anmolagarwal/anmolagarwal.github.io&Date)
+### Production Build
 
-## This project was made using Create Next App! Here is the scripts that u can run.
+```bash
+npm run build
+```
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 📬 Contact Form (EmailJS Integration)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Optional email support via EmailJS.
 
-### `npm run build`
+Create `.env` file:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```env
+NEXT_PUBLIC_USER_ID=your_user_id
+NEXT_PUBLIC_SERVICE_ID=your_service_id
+NEXT_PUBLIC_TEMPLATE_ID=your_template_id
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔐 Safety & Reliability
+- No write access to external profiles
+- External data used in read-only, curated form
+- AI responses strictly grounded in provided data
+- Graceful handling of unknown or unsupported queries
 
-## Contributing
+---
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributiors who wants to make this website better can make contribution,which will be **greatly appreciated**.
+## 🤝 Contributing
 
-1. Fork the Project
+Contributions are welcome.
+
+1. Fork the project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Added some AmazingFeature'`)
+3. Commit your Changes (`git commit -m 'Add meaningful feature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+---
+
+## 📜 License
+
+MIT License.
